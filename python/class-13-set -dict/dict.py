@@ -1,0 +1,11 @@
+d1={}
+print(type(d1))
+emp={
+    "eid":101,"ename":"rahul","esal":45000,"loc":"wayanad"
+}
+keys=emp.keys()
+values=emp.values()
+kv=emp.items()
+print(keys)
+print(values)
+print(kv)
