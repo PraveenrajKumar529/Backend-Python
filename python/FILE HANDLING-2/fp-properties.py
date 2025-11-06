@@ -1,0 +1,1 @@
+fp=open("wish.txt","w")
