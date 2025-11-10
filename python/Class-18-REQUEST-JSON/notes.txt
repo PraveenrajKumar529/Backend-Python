@@ -1,0 +1,9 @@
+usage:fetch all users
+REST-API URL:https://jsonplaceholder.typicode.com/users
+Method Type:GET
+Required Feilds:None
+Access Type:Public
+
+Task 1:invoke rest api and print all users
+Task 2:invoke rest api and write all users in new
+Task 3:invoke rest api and write all users in new CSV FILE
