@@ -1,0 +1,8 @@
+CLASS-1:19/11/25
+-------------------
+FAST API-WITH OOPL:
+------------------------
+FAST API IS NOTHING BUT WEB FRAMEWORK.
+backend developer using web frame works to develop rest api ....eg like fast api ,drf,flask for py ,java-springboot , javascript-nodejs,expressjs,.net-asp net, golang- gin.
+
+python virtual environment : to avoid the dependency isolation errors we use this.

@@ -1,0 +1,62 @@
+from pymongo import MongoClient
+client=None
+try:
+    client=MongoClient('mongodb://localhost:27017/')
+    db=client['db4']
+    user_col=db['users']
+    users=[{"uid":1,"uname":"Ariadne","gender":"Female"},
+{"uid":2,"uname":"Fidelio","gender":"Male"},
+{"uid":3,"uname":"Ruben","gender":"Male"},
+{"uid":4,"uname":"Allis","gender":"Female"},
+{"uid":5,"uname":"Rosalinde","gender":"Female"},
+{"uid":6,"uname":"Rory","gender":"Female"},
+{"uid":7,"uname":"Frederick","gender":"Male"},
+{"uid":8,"uname":"Rachele","gender":"Female"},
+{"uid":9,"uname":"Jerry","gender":"Female"},
+{"uid":10,"uname":"Sarina","gender":"Female"},
+{"uid":11,"uname":"Delainey","gender":"Male"},
+{"uid":12,"uname":"De witt","gender":"Genderqueer"},
+{"uid":13,"uname":"Helli","gender":"Female"},
+{"uid":14,"uname":"Lorrayne","gender":"Genderfluid"},
+{"uid":15,"uname":"Giorgia","gender":"Female"},
+{"uid":16,"uname":"Dolores","gender":"Female"},
+{"uid":17,"uname":"Kelsy","gender":"Female"},
+{"uid":18,"uname":"Alonso","gender":"Male"},
+{"uid":19,"uname":"Maison","gender":"Male"},
+{"uid":20,"uname":"Juliane","gender":"Female"},
+{"uid":21,"uname":"Kahlil","gender":"Male"},
+{"uid":22,"uname":"Papageno","gender":"Male"},
+{"uid":23,"uname":"Stella","gender":"Female"},
+{"uid":24,"uname":"Viole","gender":"Female"},
+{"uid":25,"uname":"Ettie","gender":"Female"},
+{"uid":26,"uname":"Casar","gender":"Male"},
+{"uid":27,"uname":"Suzanna","gender":"Female"},
+{"uid":28,"uname":"Olimpia","gender":"Female"},
+{"uid":29,"uname":"Standford","gender":"Male"},
+{"uid":30,"uname":"Sanderson","gender":"Male"},
+{"uid":31,"uname":"Bettina","gender":"Female"},
+{"uid":32,"uname":"Hillard","gender":"Male"},
+{"uid":33,"uname":"Vitia","gender":"Female"},
+{"uid":34,"uname":"Marietta","gender":"Male"},
+{"uid":35,"uname":"Galvan","gender":"Male"},
+{"uid":36,"uname":"Tory","gender":"Female"},
+{"uid":37,"uname":"Diarmid","gender":"Male"},
+{"uid":38,"uname":"Chloette","gender":"Female"},
+{"uid":39,"uname":"Vernen","gender":"Male"},
+{"uid":40,"uname":"Boycey","gender":"Male"},
+{"uid":41,"uname":"Marnie","gender":"Female"},
+{"uid":42,"uname":"Andie","gender":"Male"},
+{"uid":43,"uname":"Estel","gender":"Polygender"},
+{"uid":44,"uname":"Brose","gender":"Male"},
+{"uid":45,"uname":"Starla","gender":"Female"},
+{"uid":46,"uname":"Baillie","gender":"Male"},
+{"uid":47,"uname":"Mariel","gender":"Female"},
+{"uid":48,"uname":"Alexio","gender":"Male"},
+{"uid":49,"uname":"West","gender":"Male"},
+{"uid":50,"uname":"Dynah","gender":"Female"}]
+    user_col.insert_many(users)
+    print("Documents Inserted Successfully!")
+except:
+    print("Unable to Insert")
+finally:
+    pass

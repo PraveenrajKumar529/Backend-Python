@@ -1,21 +1,21 @@
 import mysql.connector
 dbcon=None 
-cursor=None
+cursor=None 
 try:
     dbcon=mysql.connector.connect(host='localhost',
                                   user='root',
                                   password='root',
-                                  database='db4')
+                                  database='db4') 
     print(dbcon.is_connected())
     cursor=dbcon.cursor()
-    sql_st='insert into user values(101,"Rahul");'
-    sql_st='insert into user values(102,"Ravi");'
-    sql_st='insert into user values(103,"Raj");'
-    sql_st='insert into user values(104,"sonia");'
-    sql_st='insert into user values(105,"priyanka");'
+    sql_st='''
+           insert into employees
+           values
+           (101,"Rahul","rg@gmail.com","Bangalore");
+           '''
     cursor.execute(sql_st)
     dbcon.commit()
-    print("Data Inserted Successfully")
+    print("Data Inserted Successfully!")
 except mysql.connector.Error as err:
     print(err)
 finally:

@@ -1,0 +1,31 @@
+Create
+------
+usage:create new user 
+Rest API URL: http://127.0.0.1:8000/create 
+Method Type:POST
+Required Fiels: uid,uname,email
+Access Type:Public
+
+Read
+-----
+usage:fetch user details 
+Rest API URL: http://127.0.0.1:8000/read 
+Method Type:GET 
+Required Fiels:None 
+Access Type:Public 
+
+Update
+-----
+usage:update user 
+Rest API URL: http://127.0.0.1:8000/update 
+Method Type:PUT 
+Required Fiels:None 
+Access Type:Public 
+
+Delete
+------
+usage:Delete  user 
+Rest API URL: http://127.0.0.1:8000/del
+Method Type:Delete
+Required Fiels: None 
+Access Type:Public
